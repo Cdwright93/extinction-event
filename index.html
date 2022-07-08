@@ -16,7 +16,7 @@
 
             <section class="feature">
                 <h3>Click a dinosaur species to cross it off the list.</h3>
-                <ol>
+                <ol onclick ="lineThru(event.target)" class="dino">
                     <li>Alocodon</li>
                     <li>Chuandongocoelurus</li>
                     <li>Patagosaurus</li>
@@ -37,7 +37,7 @@
 
             <section class="feature">
                 <h3>Click a species to make it fade away.</h3>
-                <ul>
+                <ul onclick="fadeAway(event.target)" class="dino">
                     <li>Archaeopteryx</li>
                     <li>Banji</li>
                     <li>Agrosaurus</li>
@@ -58,7 +58,7 @@
 
             <section class="feature">
                 <h3>Click a dinosaur to watch him collapse into obscurity.</h3>
-                <section id="row">
+                <section id="row" onclick="eraseDinos(event.target)" class="dino">
                     <img id="triceratops" src="pictures/triceratops.jpg">
                     <img id="hide-me" src="pictures/run-away.jpg">
                     <img id="biggify" src="pictures/disney.jpg">
@@ -72,7 +72,7 @@
                 <h3>It's better to burn out then fade away.</h3>
                 <p><a href="https://en.wikipedia.org/wiki/My_My,_Hey_Hey_(Out_of_the_Blue)">(My my, hey hey.)</a></p>
 
-                <button id="destroy-all">METEOR ME</button>
+                <button id="destroy-all" onclick="meteor()">METEOR ME</button>
             </section>
         </div>
         <script src="main.js"></script>
